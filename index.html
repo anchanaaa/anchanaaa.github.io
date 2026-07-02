@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchanaa Abayakaran — Portfolio</title>
+<meta name="description" content="Game development and machine learning projects by [Anchanaa Abayakaran], CS student.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="nav__mark">AA<span class="nav__mark-dim">_</span></a>
+  <nav class="nav__links">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="resume.pdf" class="nav__cv">Résumé ↗</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="hero__blip">&gt; portfolio --init</p>
+    <h1 class="hero__title">
+      Anchanaa Abayakaran<br>
+      <span class="hero__title-sub">builds playable worlds &amp; models that learn.</span>
+    </h1>
+    <p class="hero__desc">
+      CS student splitting time between <span class="tag tag--game">game development</span>
+      and <span class="tag tag--ml">machine learning</span>. This is where the finished
+      work lives, not the coursework.
+    </p>
+    <a href="#projects" class="hero__scroll">
+      <span>see the build log</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-head">
+      <p class="eyebrow">01 — Build Log</p>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filter projects by track">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter filter--game" data-filter="game" role="tab" aria-selected="false">Game Dev</button>
+      <button class="filter filter--ml" data-filter="ml" role="tab" aria-selected="false">Machine Learning</button>
+    </div>
+
+    <ul class="log" id="log">
+
+      <li class="entry" data-track="game">
+        <div class="entry__meta">
+          <span class="entry__tag tag--game">GAME</span>
+          <span class="entry__date">2026.07</span>
+        </div>
+        <div class="entry__body">
+          <h3>Project title — replace me</h3>
+          <p>One or two sentences on what it is and why you built it. What does a
+             player actually do in the first ten seconds?</p>
+          <ul class="entry__stack">
+            <li>Godot</li>
+            <li>GDScript</li>
+            <li>Aseprite</li>
+          </ul>
+        </div>
+        <div class="entry__links">
+          <a href="#">Repo ↗</a>
+          <a href="#">Play ↗</a>
+        </div>
+      </li>
+
+      <li class="entry" data-track="ml">
+        <div class="entry__meta">
+          <span class="entry__tag tag--ml">ML</span>
+          <span class="entry__date">2026.08</span>
+        </div>
+        <div class="entry__body">
+          <h3>Project title — replace me</h3>
+          <p>What's the dataset, what's the model, and what did it get right or
+             wrong? End-to-end beats a notebook — mention the dashboard/demo.</p>
+          <ul class="entry__stack">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>Streamlit</li>
+          </ul>
+        </div>
+        <div class="entry__links">
+          <a href="#">Repo ↗</a>
+          <a href="#">Live demo ↗</a>
+        </div>
+      </li>
+
+      <li class="entry" data-track="game">
+        <div class="entry__meta">
+          <span class="entry__tag tag--game">GAME</span>
+          <span class="entry__date">2026.09</span>
+        </div>
+        <div class="entry__body">
+          <h3>Project title — replace me</h3>
+          <p>A second project, or delete this entry if you only ship one game
+             this summer. Better to have two finished than three unfinished.</p>
+          <ul class="entry__stack">
+            <li>C++</li>
+            <li>OpenGL</li>
+          </ul>
+        </div>
+        <div class="entry__links">
+          <a href="#">Repo ↗</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="eyebrow">02 — About</p>
+      <h2>Currently studying</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__bio">
+        Hi, I'm Anchanaa! I'm a CS student at the University of Warwick who loves breaking down complex problems 
+        and turning them into clean code. Right now, I'm exploring the spaces where Machine Learning and Game 
+        Development overlap—combining my backend programming skills with data-driven insights.
+      </p>
+      <ul class="modules">
+        <li>CS Project</li>
+        <li>Machine Learning</li>
+        <li>Computer Graphics</li>
+        <li>Mobile Robotics</li>
+        <li>Computational Intelligence in Biomedical Engineering</li>
+        <li>Compiler Design</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="section-head">
+    <p class="eyebrow">03 — Contact</p>
+    <h2>Get in touch</h2>
+  </div>
+  <div class="contact__links">
+    <a href="mailto:anchanaa.abayakaran@gmail.com">anchanaa.abayakaran@gmail.com</a>
+    <a href="https://github.com/anchanaaa">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/anchanaa-abayakaran/">LinkedIn ↗</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
